@@ -1,19 +1,29 @@
 
-
-var msg= document.getElementById('msg')
-var img1= document.getElementsByClassName('img1');
-var img2= document.getElementsByClassName('img2');
-
 function game(){
- var random= Math.ceil(Math.random() * 6);
- var random2= Math.ceil(Math.random() * 6);
- img1.src = `images/dice${random}.png`;
- img2.src = `images/dice${random2}.png`;
 
+    var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+    
+    var randomImageSource = "images/dice" + randomNumber1 + ".png"; 
+    
+    var image1 = document.querySelectorAll("img")[0];
+    
+    image1.setAttribute("src", randomImageSource);
+    
+    
+    var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+    
+    var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
+    
+    document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
-    if(random > random2){
-        msg.innerHTML= 'Player 1 WIN!!'
-    }else{
-        msg.innerHTML= 'Player 2 WIN!!'
+    if (randomNumber1 > randomNumber2) {
+      document.querySelector("h1").innerHTML = "🚩 Player 1 Wins!";
     }
+    else if (randomNumber2 > randomNumber1) {
+      document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
+    }
+    else {
+      document.querySelector("h1").innerHTML = "Draw!";
+    }
+    
 }
