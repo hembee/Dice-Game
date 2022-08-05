@@ -36,6 +36,7 @@ footer, p, h1{
 h1{
     font-size: 40px;
 }
+
 .dice{
     display: inline-block;
     text-align: center;
@@ -44,4 +45,18 @@ h1{
 
 img{
     width: 80%;
+}
+@media(max-width: 600px){
+    img{
+        flex-basis: 30%;
+    }
+    #dices{
+        display: flex;
+    }
+    h1{
+        font-size: 30px;
+    }
+    button{
+        font-size: 20px;
+    }
 }
