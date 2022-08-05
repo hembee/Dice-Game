@@ -18,22 +18,22 @@ button{
     color: aliceblue;
     font-size: 30px;
     margin-top: 80px;
-    transition: 2s ease-in-out;
+    transition: 1s ease-in-out;
 }
 button:hover{
-    background: -webkit-linear-gradient(rgb(21, 240, 13), rgb(7, 158, 228));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-}
-footer, p{
+    background-color: aliceblue;
+    color:red;
+}   
+footer, p, h1{
     margin: 20px;
     font-size: larger;
     background: -webkit-linear-gradient(rgb(21, 240, 13), rgb(7, 158, 228));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+h1{
+    font-size: 40px;
 }
 .dice{
     display: inline-block;
