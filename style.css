@@ -17,7 +17,15 @@ button{
     background: -webkit-linear-gradient(rgb(21, 240, 13), rgb(7, 158, 228));
     color: aliceblue;
     font-size: 30px;
-    margin: 40px;
+    margin-top: 80px;
+    transition: 2s ease-in-out;
+}
+button:hover{
+    background: -webkit-linear-gradient(rgb(21, 240, 13), rgb(7, 158, 228));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 footer, p{
     margin: 20px;
